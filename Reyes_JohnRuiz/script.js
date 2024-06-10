@@ -40,8 +40,9 @@ function initialize() {
 
   function createCommentElement(name, text, date) {
     const commentElement = document.createElement("p");
-    commentElement.innerHTML = "Name: " + name + "<br>Comment: " + text + 
-    "<br><small>" + date.toLocaleString() + "</small>";
+    commentElement.innerHTML = 
+      "Name: " + name + "<p>Comment: " + text + 
+      "<p><small>" + date.toLocaleString() + "</small>";
     return commentElement;
   }
 
