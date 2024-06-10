@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffcccc;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#countryInput {
+    width: calc(100% - 80px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #e86f6f;
+    border-radius: 4px;
+}
+
+button {
+    width: 80px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #e754aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d481b7;
+}
+
+.country-details,
+.same-region-countries {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #f16c6c;
+    border-radius: 4px;
+}

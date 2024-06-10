@@ -1,0 +1,176 @@
+form {
+  display: grid;
+  border: 1px solid;
+  padding: 10px;
+}
+
+#email, 
+#name, 
+#subject,
+#age {
+  width: auto;
+}
+
+#email {
+  grid-area: email;
+}
+
+#name {
+  grid-area: name;
+}
+
+#subject {
+  grid-area: subject;
+}
+
+#age {
+  grid-area: age;
+}
+
+#message {
+  grid-area: message;
+}
+
+#smcopy {
+  grid-area: smcopy;
+}
+
+#submit {
+  grid-area: submit;
+}
+
+.form {
+  display: grid;
+  grid-template-areas:
+    "email name"
+    "age subject"
+    "smcopy ."
+    "message ."
+    "submit submit";
+}
+
+@media (min-width: 425px) {
+  .form {
+    grid-template-areas:
+      "email name"
+      "age subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (width=425px) {
+  .form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (max-width: 425px) {
+  .form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(189, 45, 122);
+}
+
+@media only screen and (max-width: 480px) {
+  #name h1 {
+    font-size: 24px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #name h1 {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  #name h1 {
+    font-size: 32px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-image: url(background_photo.jpg);
+  background-size: cover;
+}
+
+.countries {
+border: 2px solid;
+  text-align: center;
+  font-style: italic;
+  font-family: "Arial Narrow Bold";
+}
+
+.title,
+#my_name,
+.goals,
+.opinion {
+  border: 2px solid;
+  text-align: center;
+  font-style: italic;
+  font-family: "Arial Narrow Bold";
+}
+
+.comment input {
+  width: 100%;
+}
+
+.comment textarea {
+  width: 100%;
+}
+
+.comment button {
+  width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
+.countries-pages {
+  border: 2px black solids;
+}
