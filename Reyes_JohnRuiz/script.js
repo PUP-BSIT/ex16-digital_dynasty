@@ -40,7 +40,8 @@ function initialize() {
 
   function createCommentElement(name, text, date) {
     const commentElement = document.createElement("p");
-    commentElement.innerHTML = "Name: " + name + "<br>Comment: " + text + "<br><small>" + date.toLocaleString() + "</small>";
+    commentElement.innerHTML = "Name: " + name + "<br>Comment: " + text + 
+    "<br><small>" + date.toLocaleString() + "</small>";
     return commentElement;
   }
 
@@ -56,10 +57,11 @@ function initialize() {
     commentsContainer.innerHTML = "";
     for (var i = 0; i < commentsToRender.length; i++) {
       const comment = commentsToRender[i];
-      const commentElement = createCommentElement(comment.name, comment.text, comment.date);
+      const commentElement = createCommentElement
+      (comment.name, comment.text,comment.date);
       commentsContainer.appendChild(commentElement);
     }
-    // Re-attach the sort buttons after rendering comments
+   
     commentsContainer.appendChild(sortAscButton);
     commentsContainer.appendChild(sortDescButton);
   }

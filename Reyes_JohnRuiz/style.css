@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(192, 232, 247, 0.963);
-  background-image: url("giphy2.gif");
+  background-image: url("./Assets/giphy2.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -61,7 +61,7 @@ ol li {
 }
 
 .my-goals {
-  background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
+  background-color: rgba(192, 232, 247, 0.963); 
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
@@ -71,11 +71,11 @@ ol li {
 }
 
 .my-goals {
-  margin-bottom: 20px; /* Add margin at the bottom of goals */
+  margin-bottom: 20px; 
 }
 
 .my-goals ol {
-  padding-left: 20px; /* Indent list items */
+  padding-left: 20px; 
 }
 
 .add-comment h3 {
@@ -87,7 +87,7 @@ ol li {
 }
 
 .comments {
-  margin-top: 20px; /* Add margin at the top of comments */
+  margin-top: 20px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
