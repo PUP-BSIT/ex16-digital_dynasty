@@ -1,0 +1,283 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(192, 232, 247, 0.963);
+  background-image: url("giphy2.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000000;
+}
+
+header {
+  background-color: rgba(148, 176, 185, 0.963);
+  color: #000000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+section h2 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
+
+.testimonials div {
+  margin-bottom: 20px;
+}
+
+.my-goals {
+  background-color: rgba(192, 232, 247, 0.963); /* Different color for My Goals container */
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.my-goals {
+  margin-bottom: 20px; /* Add margin at the bottom of goals */
+}
+
+.my-goals ol {
+  padding-left: 20px; /* Indent list items */
+}
+
+.add-comment h3 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comments {
+  margin-top: 20px; /* Add margin at the top of comments */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.comments h3 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.oc-thoughts {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+  justify-content: center;
+}
+
+.oc-thoughts h2 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery h2 {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+.Contact {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    "email name"
+    "age subject"
+    "smcopy ."
+    "message ."
+    "submit submit";
+  border: 1px solid;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+#email,
+#name,
+#subject,
+#age,
+#message,
+#smcopy,
+#submit {
+  padding: 10px;
+}
+
+#email {
+  grid-area: email;
+}
+
+#name {
+  grid-area: name;
+}
+
+#subject {
+  grid-area: subject;
+}
+
+#age {
+  grid-area: age;
+}
+
+#message {
+  grid-area: message;
+  width: 100%;
+  height: 150px;
+  resize: vertical;
+}
+
+#smcopy {
+  grid-area: smcopy;
+}
+
+#submit {
+  grid-area: submit;
+  background-color: rgba(192, 232, 247, 0.963);
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 425px) {
+  form {
+    grid-template-areas:
+      "email name"
+      "age subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (width=425px) {
+  form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    grid-template-areas:
+      "email email"
+      "name name"
+      "age age"
+      "subject subject"
+      "smcopy smcopy"
+      "message message"
+      "submit submit";
+  }
+}
+
+.sorted_buttons {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  box-sizing: border-box;
+  background-color: rgba(148, 176, 185, 0.963);
+}
+
+.sorted_buttons h2 {
+  color: #000000;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sorted_buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: rgba(192, 232, 247, 0.963);
+  border: none;
+  cursor: pointer;
+}
+
+.sorted_buttons button:hover {
+  background-color: rgba(148, 176, 185, 0.963);
+}
