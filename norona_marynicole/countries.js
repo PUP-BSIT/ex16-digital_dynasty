@@ -55,8 +55,7 @@ function search_country() {
               country.languages
                 ? Object.values(country.languages).join(", ")
                 : "N/A"
-            }</p>
-          `;
+            }</p>`;
       document.getElementById("country_details").innerHTML = details;
 
       return fetch("https://restcountries.com/v3.1/region/" + country.region);
