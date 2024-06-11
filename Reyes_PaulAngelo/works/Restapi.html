@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/restapi_css.css" rel="stylesheet" /> 
+    <title>Slime Movies</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Reincarnated As a Slime</h1>
+        <input type="hidden" id="movie_id">
+        <input type="text" id="character" placeholder="Character">
+        <input type="text" id="species" placeholder="Species">
+        <input type="text" id="from_where" placeholder="From Where">
+        <input type="text" id="rank" placeholder="Rank">
+        <input type="text" id="title" placeholder="Title/Nickname">
+        <button id="add_btn" onclick="insertcharacter()">Add Movie</button>
+        <table id="character_table">
+            <thead>
+                <tr>
+                    <th>Cha</th>
+                    <th>Species</th>
+                    <th>From Where</th>
+                    <th>Rank</th>
+                    <th>Title/Nickname</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./script/api_script.js"></script>
+</body>
+</html>
