@@ -24,38 +24,38 @@ function search_country() {
             <p><strong>Area:</strong> ${
               country.area
                 ? country.area.toLocaleString() + " square kilometers"
-                : "N/A"
-            }</p>
+                : "N/A"}
+            </p>
             <p><strong>Population:</strong> ${
-              country.population ? country.population.toLocaleString() : "N/A"
-            }</p>
+              country.population ? country.population.toLocaleString() : "N/A"}
+            </p>
             <p><strong>Region:</strong> ${
-              country.region ? country.region : "N/A"
-            }</p>
+              country.region ? country.region : "N/A"}
+            </p>
             <p><strong>Capital:</strong> ${
-              country.capital ? country.capital[0] : "N/A"
-            }</p>
+              country.capital ? country.capital[0] : "N/A"}
+            </p>
             <p><strong>Currency:</strong> ${
               country.currencies
                 ? Object.values(country.currencies).join(", ")
-                : "N/A"
-            }</p>
+                : "N/A"}
+            </p>
             <p><strong>Calling Code:</strong> ${
-              country.callingCodes ? country.callingCodes[0] : "N/A"
-            }</p>
+              country.callingCodes ? country.callingCodes[0] : "N/A"}
+            </p>
             <p><strong>Timezones:</strong> ${
-              country.timezones ? country.timezones.join(", ") : "N/A"
-            }</p>
+              country.timezones ? country.timezones.join(", ") : "N/A"}
+            </p>
             <p><strong>Native Name:</strong> ${
               country.name.nativeName
                 ? Object.values(country.name.nativeName).join(", ")
-                : "N/A"
-            }</p>
+                : "N/A" }
+            </p>
             <p><strong>Official Languages:</strong> ${
               country.languages
                 ? Object.values(country.languages).join(", ")
-                : "N/A"
-            }</p>`;
+                : "N/A"}
+            </p>`;
       document.getElementById("country_details").innerHTML = details;
 
       return fetch("https://restcountries.com/v3.1/region/" + country.region);
@@ -78,11 +78,12 @@ function search_country() {
               </div>`;
         })
         .join("");
+
       document.getElementById("same_region_countries").innerHTML = `
             <h2>Countries in the Same Region (${region})</h2>
-            <div class="country-list">${same_region_countries_list}</div>
-          `;
+            <div class="country-list">${same_region_countries_list}</div>`;
     })
+    
     .catch(function (error) {
       console.error("Error fetching data:", error);
       document.getElementById("country_details").innerHTML =

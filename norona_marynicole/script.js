@@ -52,8 +52,7 @@ function displayComments() {
     commentDiv.innerHTML = `
                   <p>Name: ${comment.name}</p>
                   <p>Comment: ${comment.text}</p>
-                  <p class="comment-date">Date: ${commentDate}</p>
-              `;
+                  <p class="comment-date">Date: ${commentDate}</p>`;
     commentsSection.appendChild(commentDiv);
   });
 }
