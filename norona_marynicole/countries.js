@@ -1,25 +1,25 @@
-function searchCountry() {
-  let countryName = document.getElementById("countryInput").value.trim();
-  if (!countryName) {
-    document.getElementById("countryDetails").innerHTML =
+function search_country() {
+  const country_name = document.getElementById("country_input").value.trim();
+  if (!country_name) {
+    document.getElementById("country_details").innerHTML =
       "<p>Please enter a country name.</p>";
-    document.getElementById("sameRegionCountries").innerHTML = "";
-    document.getElementById("newCountryDetails").innerHTML = "";
+    document.getElementById("same_region_countries").innerHTML = "";
+    document.getElementById("new_country_details").innerHTML = "";
     return;
   }
 
-  fetch("https://restcountries.com/v3.1/name/" + countryName)
+  fetch("https://restcountries.com/v3.1/name/" + country_name)
     .then(function (response) {
       if (!response.ok) {
         throw new Error("Country not found");
       }
       return response.json();
     })
-    .then(function (countryData) {
-      let country = countryData[0];
+    .then(function (country_data) {
+      let country = country_data[0];
       let details = `
             <h2>Country Details - ${country.name.common}</h2>
-            <img src="${country.flags.svg}" alt="Flag of ${country.name.common}
+            <img src="${country.flags.svg}" alt="Flag of ${country.name.common}"
                      " width="100">
             <p><strong>Area:</strong> ${
               country.area
@@ -57,7 +57,7 @@ function searchCountry() {
                 : "N/A"
             }</p>
           `;
-      document.getElementById("countryDetails").innerHTML = details;
+      document.getElementById("country_details").innerHTML = details;
 
       return fetch("https://restcountries.com/v3.1/region/" + country.region);
     })
@@ -67,29 +67,28 @@ function searchCountry() {
       }
       return response.json();
     })
-    .then(function (regionData) {
-      let region = regionData[0].region;
-      let sameRegionCountriesList = regionData
+    .then(function (region_data) {
+      let region = region_data[0].region;
+      let same_region_countries_list = region_data
         .map(function (c) {
           return `
               <div class="country-card">
                 <img src="${c.flags.svg}" alt="Flag of ${c.name.common}"
                  width="50">
                 <p>${c.name.common}</p>
-              </div>
-            `;
+              </div>`;
         })
         .join("");
-      document.getElementById("sameRegionCountries").innerHTML = `
+      document.getElementById("same_region_countries").innerHTML = `
             <h2>Countries in the Same Region (${region})</h2>
-            <div class="country-list">${sameRegionCountriesList}</div>
+            <div class="country-list">${same_region_countries_list}</div>
           `;
     })
     .catch(function (error) {
       console.error("Error fetching data:", error);
-      document.getElementById("countryDetails").innerHTML =
+      document.getElementById("country_details").innerHTML =
         "<p>An error occurred: " + error.message + "</p>";
-      document.getElementById("sameRegionCountries").innerHTML = "";
-      document.getElementById("newCountryDetails").innerHTML = "";
+      document.getElementById("same_region_countries").innerHTML = "";
+      document.getElementById("new_country_details").innerHTML = "";
     });
 }
