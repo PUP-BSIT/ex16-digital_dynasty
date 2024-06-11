@@ -120,7 +120,7 @@ img {
 }
 
 body {
-  background-image: url(background_photo.jpg);
+  background-image: url(../pictures/background_photo.jpg);
   background-size: cover;
 }
 
