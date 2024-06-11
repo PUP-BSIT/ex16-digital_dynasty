@@ -35,7 +35,7 @@ searchButton.addEventListener("click", async () => {
 
       <p> 
         <strong>Languages:</strong> ${
-        country.languages ? Object.values(country.languages).join(", ") : "N/A"}
+        country.languages ? Object.values(country.languages).join(", ") :"N/A"}
       </p>
 
       <p> 
