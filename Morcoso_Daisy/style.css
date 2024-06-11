@@ -1,0 +1,618 @@
+* {
+<<<<<<< HEAD
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffb58e;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1 {
+    background-color: rgba(65, 23, 0, 0.825);
+    color: rgb(245, 205, 179);
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+=======
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffb58e;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+h1 {
+  background-color: rgba(65, 23, 0, 0.825);
+  color: rgb(245, 205, 179);
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
+}
+
+.hobbies-and-interests,
+.works,
+#gallery,
+form,
+.contact-container,
+.my-goals-in-life,
+.my-goals-for-myself,
+.friendship-goals,
+.relationship-goals,
+.comment-section {
+<<<<<<< HEAD
+    background-color: rgba(158, 104, 75, 0.825);
+    color: #0a0a0aa7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+=======
+  background-color: rgba(158, 104, 75, 0.825);
+  color: #0a0a0aa7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
+}
+
+.hobbies-and-interests h2,
+.works h2,
+#gallery h2,
+form h2,
+.contact-container h2,
+.my-goals-in-life h2,
+.my-goals-for-myself h2,
+.friendship-goals h2,
+.relationship-goals h2,
+.comment-section h3 {
+<<<<<<< HEAD
+    margin-top: 0;
+    background-color: #f9bd9bd7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hobbies-and-interests ul {
+    background-color: #f1b28dcf;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.hobbies-and-interests ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.works ol {
+    padding-left: 20px;
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.works ol li {
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.works a {
+    color: #fec292;
+    text-decoration: none;
+}
+
+.works a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: 1px solid;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 10px;
+=======
+  margin-top: 0;
+  background-color: #f9bd9bd7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hobbies-and-interests ul {
+  background-color: #f1b28dcf;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.hobbies-and-interests ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.works ol {
+  padding-left: 20px;
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.works ol li {
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.works a {
+  color: #fec292;
+  text-decoration: none;
+}
+
+.works a:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  border: 1px solid;
+  padding: 10px;
+  justify-items: center;
+  border-radius: 10px;
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
+}
+
+#email,
+#name,
+#age,
+#smcopy,
+#submit {
+<<<<<<< HEAD
+    width: calc(100% - 32px);
+    max-width: 400px;
+}
+
+#message {
+    width: calc(100% - 32px);
+    max-width: 400px;
+    height: 100px;
+}
+
+#smcopy {
+    display: flex;
+    align-items: center;
+=======
+  width: calc(100% - 32px);
+  max-width: 400px;
+}
+
+#message {
+  width: calc(100% - 32px);
+  max-width: 400px;
+  height: 100px;
+}
+
+#smcopy {
+  display: flex;
+  align-items: center;
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"],
+textarea {
+<<<<<<< HEAD
+    background-color: rgb(241, 184, 151);
+    width: 100%;
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(4, 4, 4);
+    margin-bottom: 20px;
+=======
+  background-color: rgb(241, 184, 151);
+  width: 100%;
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgb(4, 4, 4);
+  margin-bottom: 20px;
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
+}
+
+input:focus,
+textarea:focus {
+<<<<<<< HEAD
+    outline: none;
+    border-color: rgb(0, 0, 0);
+}
+
+button {
+    background-color: rgb(241, 184, 151);
+    border-radius: 20px;
+    border: 1px solid #060616;
+    font-size: 22px;
+    padding: 10px 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.checkbox-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.checkbox-label span {
+    margin-left: 10px;
+}
+
+.works ol li a {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #080808;
+    background-color: #f6b180;
+    border: 2px solid transparent;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    text-align: center;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.works ol li a:hover {
+    background-color: #a7582aeb;
+    border-color: #000000e2;
+}
+
+#testimonials {
+    padding: 20px;
+}
+
+.testimonial {
+    background-color: #fbc7a4;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boxed-section {
+    background-color: rgba(244, 153, 104, 0.962);
+    color: #0a0a0aa7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.my-goals-for-myself {
+    background-color: rgba(158, 104, 75, 0.825);
+    color: #000000a7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.boxed-section h2 {
+    margin-top: 0;
+    background-color: #f5af87d7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-comment-container {
+    text-align: center;
+}
+
+.comment-section .add-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments-of-team-comment {
+    background-color: rgba(158, 104, 75, 0.825);
+    color: #0a0a0aa7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.comments-of-team-comment h3 {
+    margin-top: 0;
+    background-color: #f5af87d7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comments-of-team-comment p {
+    margin-bottom: 10px;
+}
+
+.oc-thoughts {
+    background-color: rgba(158, 104, 75, 0.825);
+    color: #0a0a0aa7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.oc-thoughts h2 {
+    margin-top: 0;
+    background-color: #eeaa83d7;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.oc-thoughts .reasons {
+    background-color: rgba(181, 125, 92, 0.966);
+    color: #0a0a0aa7;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.oc-thoughts .reasons p {
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 60%;
+    }
+}
+=======
+  outline: none;
+  border-color: rgb(0, 0, 0);
+}
+
+button {
+  background-color: rgb(241, 184, 151);
+  border-radius: 20px;
+  border: 1px solid #060616;
+  font-size: 22px;
+  padding: 10px 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.checkbox-label span {
+  margin-left: 10px;
+}
+
+.works ol li a {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #080808;
+  background-color: #f6b180;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.works ol li a:hover {
+  background-color: #a7582aeb;
+  border-color: #000000e2;
+}
+
+#testimonials {
+  padding: 20px;
+}
+
+.testimonial {
+  background-color: #fbc7a4;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.boxed-section {
+  background-color: rgba(244, 153, 104, 0.962);
+  color: #0a0a0aa7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.my-goals-for-myself {
+  background-color:  rgba(158, 104, 75, 0.825);
+  color: #000000a7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.boxed-section h2 {
+  margin-top: 0;
+  background-color: #f5af87d7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-comment-container {
+  text-align: center;
+}
+
+.comment-section .add-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comments-of-team-comment {
+  background-color:  rgba(158, 104, 75, 0.825);
+  color: #0a0a0aa7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.comments-of-team-comment h3 {
+  margin-top: 0;
+  background-color: #f5af87d7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comments-of-team-comment p {
+  margin-bottom: 10px;
+}
+
+.oc-thoughts {
+  background-color:  rgba(158, 104, 75, 0.825);
+  color: #0a0a0aa7;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.986);
+}
+
+.oc-thoughts h2 {
+  margin-top: 0;
+  background-color: #eeaa83d7;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.oc-thoughts .reasons {
+  background-color: rgba(181, 125, 92, 0.966);
+  color: #0a0a0aa7;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.oc-thoughts .reasons p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 60%;
+  }
+}
+>>>>>>> ad4191d295d8a67e5f7b8bf70c4f094cc2eb0794
