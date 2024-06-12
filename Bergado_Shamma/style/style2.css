@@ -29,7 +29,8 @@ body {
 .contact-me,
 .my-goals,
 .oc-thoughts,
-.countries-of-the-world {
+.countries-of-the-world,
+.demon-slayer {
   background-color: white;
   margin: 3%;
   padding: 1%;
@@ -42,14 +43,16 @@ body {
 .comments-of-team,
 .comments-of-team2,
 .reasons,
-#countries{
+#countries,
+#demon_slayer {
   background-color: rgb(173, 216, 230);
   color: black;
   box-shadow: 2px 2px 2px 2px #0096ff;
   margin-top: 20px;
 }
 
-.countries-of-the-world {
+.countries-of-the-world,
+.demon-slayer {
   text-align: center;
   overflow: hidden;
 }

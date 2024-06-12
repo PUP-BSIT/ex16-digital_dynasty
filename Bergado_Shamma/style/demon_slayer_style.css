@@ -1,89 +1,95 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background: url('https://images.unsplash.com/photo-1611007638270-d6c28bbcc6aa') no-repeat center center fixed;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", "Arial, sans-serif";
+  background: url("../pictures/demon_slayer.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-    text-align: center;
+  background: rgba(100, 150, 150, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 50%;
+  max-width: 800px;
+  text-align: center;
 }
 
 h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
+  margin-bottom: 20px;
+  font-size: 3em;
+  color: white;
 }
 
-input[type="text"], input[type="hidden"], button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input[type="text"],
+input[type="hidden"],
+button {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid darkblue;
+  border-radius: 5px;
 }
 
 button {
-    background-color: #f39c12;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', 'Arial, sans-serif';
 }
 
 button:hover {
-    background-color: #e67e22;
+  background-color: blue;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
-th, td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: center;
+th,
+td {
+  padding: 12px;
+  border: 1px solid white;
+  text-align: center;
 }
 
 th {
-    background-color: #f39c12;
-    color: white;
+  background-color: darkblue;
+  color: white;
 }
 
 td button {
-    margin: 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 td button:first-child {
-    background-color: #e74c3c;
+    background-color: darkred;
     color: white;
 }
 
 td button:last-child {
-    background-color: #3498db;
+    background-color: darkgreen;
     color: white;
 }
 
 td button:first-child:hover {
-    background-color: #c0392b;
+  background-color: red;
 }
 
 td button:last-child:hover {
-    background-color: #2980b9;
+  background-color: green;
 }

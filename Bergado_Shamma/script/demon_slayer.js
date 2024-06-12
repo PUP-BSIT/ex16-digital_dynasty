@@ -131,4 +131,3 @@ function clearForm() {
   document.getElementById("add_btn").innerText = "Add Character";
   document.getElementById("add_btn").onclick = insertCharacter;
 }
-

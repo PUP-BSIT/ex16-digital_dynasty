@@ -4,19 +4,16 @@ $username = "root";
 $password = "";
 $dbname = "demon_slayer_db";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Set the header for JSON response
 header('Content-Type: application/json');
 
-// Switch based on request method
 $request_method = $_SERVER['REQUEST_METHOD'];
+
 switch ($request_method) {
     case 'GET':
         fetchCharacters();
@@ -41,7 +38,7 @@ function fetchCharacters() {
     $result = $conn->query($sql);
     
     $characters = [];
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         $characters[] = $row;
     }
     
@@ -87,4 +84,33 @@ function deleteCharacter() {
     if ($conn->query($sql) === TRUE) {
         echo json_encode(["message" => "Character deleted successfully"]);
     } else {
-        echo json_encode(["error
+        echo json_encode(["error" => "Error: " . $conn->error]);
+    }
+}
+
+function updateCharacter() {
+    global $conn;
+    $data = json_decode(file_get_contents("php://input"), true);
+    
+    if (empty($data['id']) || empty($data['character_name']) || empty($data['role']) || empty($data['breathing_style']) || empty($data['rank']) || empty($data['age'])) {
+        echo json_encode(["error" => "All fields are required"]);
+        return;
+    }
+    
+    $id = $conn->real_escape_string($data['id']);
+    $character_name = $conn->real_escape_string($data['character_name']);
+    $role = $conn->real_escape_string($data['role']);
+    $breathing_style = $conn->real_escape_string($data['breathing_style']);
+    $rank = $conn->real_escape_string($data['rank']);
+    $age = $conn->real_escape_string($data['age']);
+    
+    $sql = "UPDATE characters SET character_name='$character_name', role='$role', breathing_style='$breathing_style', rank='$rank', age='$age' WHERE id=$id";
+    
+    if ($conn->query($sql) === TRUE) {
+        echo json_encode(["message" => "Character updated successfully"]);
+    } else {
+        echo json_encode(["error" => "Error: " . $conn->error]);
+    }
+}
+
+$conn->close();

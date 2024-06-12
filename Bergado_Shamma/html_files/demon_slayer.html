@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../style/demon_slayer_style.css" rel="stylesheet" /> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../style/demon_slayer_style.css" rel="stylesheet" />
+    <form action="../html_files/demon_slayer.php" method="post"></form>
     <title>Demon Slayer Characters</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
+      <form>
         <h1>Demon Slayer Characters</h1>
-        <input type="hidden" id="character_id">
-        <input type="text" id="character_name" placeholder="Character Name">
-        <input type="text" id="role" placeholder="Role">
-        <input type="text" id="breathing_style" placeholder="Breathing Style">
-        <input type="text" id="rank" placeholder="Rank">
-        <input type="text" id="age" placeholder="Age">
+        <input type="hidden" id="character_id" />
+        <input type="text" id="character_name" placeholder="Character Name" />
+        <input type="text" id="role" placeholder="Role" />
+        <input type="text" id="breathing_style" placeholder="Breathing Style" />
+        <input type="text" id="rank" placeholder="Rank" />
+        <input type="text" id="age" placeholder="Age" />
         <button id="add_btn" onclick="insertCharacter()">Add Character</button>
-        <table id="character_table">
-            <thead>
-                <tr>
-                    <th>Character Name</th>
-                    <th>Role</th>
-                    <th>Breathing Style</th>
-                    <th>Rank</th>
-                    <th>Age</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+      </form>
+      <table id="character_table">
+        <thead>
+          <tr>
+            <th>Character Name</th>
+            <th>Role</th>
+            <th>Breathing Style</th>
+            <th>Rank</th>
+            <th>Age</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
     <script src="../script/demon_slayer.js"></script>
-</body>
+  </body>
 </html>
